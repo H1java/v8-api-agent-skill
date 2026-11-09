@@ -1,0 +1,26 @@
+{
+  "name": "v8-api-agent-skill",
+  "version": "0.1.0",
+  "private": true,
+  "description": "安装 V8 API Agent Skill 并通过设备授权绑定具名密钥",
+  "type": "module",
+  "bin": {
+    "v8-api-agent-skill": "bin/cli.mjs"
+  },
+  "files": [
+    "bin/cli.mjs",
+    "skill/SKILL.md",
+    "skill/scripts/v8-api.mjs",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/H1java/v8-api-agent-skill.git"
+  }
+}
