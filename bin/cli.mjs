@@ -218,7 +218,7 @@ export async function installSkill(targetDirectory, sourceDirectory) {
 
 async function main(args) {
   if (args.length === 1 && (args[0] === '--help' || args[0] === '-h')) {
-    process.stdout.write('Usage: npx -y github:H1java/v8-api-agent-skill <USER_ID>\n');
+    process.stdout.write('Usage: npx -y --package https://v8api.wiki/skills/v8-api-agent-skill.tgz v8-api-agent-skill <USER_ID>\n');
     return;
   }
   if (args.length !== 1) throw new Error('请提供网站账户的用户 ID');
